@@ -1,10 +1,14 @@
-import React from "react";
-import { View, Text } from "react-native";
-import { styles } from "./styles";
+import React from 'react';
+import { View, Text } from 'react-native';
+
+import { Avatar } from '../Avatar';
+import { styles } from './styles';
 
 export function Profile(){
     return(
         <View style={styles.container}>
+
+            <Avatar urlImage="https://github.com/pedrothecatholic.png"/>
 
             <View>
                 <View style={styles.user}>
@@ -13,7 +17,7 @@ export function Profile(){
                     </Text>
 
                     <Text style={styles.username}>
-                        Pedro
+                        Rodrigo
                     </Text>
 
                     <Text style={styles.message}>

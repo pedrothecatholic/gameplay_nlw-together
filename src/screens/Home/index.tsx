@@ -10,7 +10,6 @@ export function Home() {
                 <Profile />
 
             </View>
-
         </View>
     );
 }
