@@ -1,7 +1,7 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { Home } from "../screens/Home";
+import { Home } from '../screens/Home';
 import { SignIn } from "../screens/SignIn";
 
 const { Navigator, Screen } = createStackNavigator();
@@ -9,7 +9,7 @@ const { Navigator, Screen } = createStackNavigator();
 export function AuthRoutes() {
     return(
         <Navigator
-            headerMode="none"
+            //headerMode='none'
             screenOptions={{
                 cardStyle: {
                     backgroundColor: 'transparent'
@@ -17,13 +17,14 @@ export function AuthRoutes() {
             }}
         >
             <Screen
-                name='SignIn'
+                name="SignIn"
                 component={SignIn}
             />
             <Screen
-                name='Home'
+                name="Home"
                 component={Home}
             />
         </Navigator>
-    ) 
+    )
+    
 }
